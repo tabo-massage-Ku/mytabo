@@ -3,25 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>TABO · مساج منزلي الكويت | احجز الآن</title>
-  <!-- SEO أساسي -->
-  <meta name="description" content="خدمة مساج منزلي احترافية للنساء والرجال في الكويت. استرخاء تام مع فريق TABO المدرب. احجز جلسة مساج في منزلك الآن.">
-  <meta name="keywords" content="مساج منزلي الكويت, تدليك منزلي, مساج للنساء, مساج للرجال, TABO, spa منزلي, استرخاء, جلسة مساج">
+  <title>أفضل مساج منزلي في الكويت | TABO - احجز جلسة استرخاء الآن</title>
+  
+  <!-- SEO محسن -->
+  <meta name="description" content="خدمة مساج منزلي احترافية للنساء والرجال في الكويت. استرخاء تام مع فريق TABO المدرب. احجز جلسة مساج في منزلك الآن - اتصل أو واتساب 94728014">
+  <meta name="keywords" content="مساج منزلي الكويت, تدليك منزلي, مساج للنساء, مساج للرجال, TABO, spa منزلي, استرخاء, جلسة مساج, مساج منزلي حولي, مساج منزلي السالمية">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://tabo-kw.com/">
-  <!-- خطوط وأيقونات -->
+  
+  <!-- OG Tags للمشاركة على وسائل التواصل -->
+  <meta property="og:title" content="TABO - مساج منزلي الكويت | احجز جلسة استرخاء">
+  <meta property="og:description" content="خدمة مساج منزلي للنساء والرجال في جميع مناطق الكويت. فريق مدرب، زيوت طبيعية.">
+  <meta property="og:image" content="https://tabo-kw.com/images/tabo-massage-kw.jpg">
+  <meta property="og:url" content="https://tabo-kw.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_KW">
+  
+  <!-- Schema Markup (JSON-LD) لتحسين ظهور الموقع في محركات البحث -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TABO",
+    "description": "خدمة مساج منزلي احترافية للنساء والرجال في الكويت.",
+    "telephone": "+96594728014",
+    "url": "https://tabo-kw.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "الكويت",
+      "addressCountry": "KW"
+    },
+    "priceRange": "$$",
+    "image": "https://tabo-kw.com/images/tabo-massage-kw.jpg",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "sameAs": [
+      "https://wa.me/96594728014"
+    ]
+  }
+  </script>
+
+  <!-- Preconnect لتحسين سرعة تحميل الخطوط والأيقونات -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- الخطوط -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome (مصغر) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
   <style>
+    /* ===== RESET & BASE ===== */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+    
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
       background: linear-gradient(145deg, #f2f0f7 0%, #e0e3ed 100%);
       min-height: 100vh;
       display: flex;
@@ -30,10 +71,12 @@
       padding: 16px;
       direction: rtl;
     }
+    
+    /* ===== البطاقة الرئيسية ===== */
     .landing-card {
       max-width: 480px;
       width: 100%;
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-radius: 40px;
@@ -45,11 +88,12 @@
       overflow: hidden;
       animation: float-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     }
+    
     @keyframes float-in {
       0% { opacity: 0; transform: translateY(40px) scale(0.96); }
       100% { opacity: 1; transform: translateY(0) scale(1); }
     }
-
+    
     /* خلفيات دائرية متحركة */
     .landing-card::before {
       content: '';
@@ -63,6 +107,7 @@
       z-index: -1;
       animation: pulse-bg 12s infinite alternate;
     }
+    
     .landing-card::after {
       content: '';
       position: absolute;
@@ -75,17 +120,19 @@
       z-index: -1;
       animation: pulse-bg 14s infinite alternate-reverse;
     }
+    
     @keyframes pulse-bg {
       0% { transform: scale(0.9) translate(0, 0); opacity: 0.4; }
       100% { transform: scale(1.4) translate(20px, -20px); opacity: 0.9; }
     }
-
-    /* HEADER مع TABO كبير */
+    
+    /* ===== HEADER ===== */
     .hero-header {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       position: relative;
     }
+    
     .brand-tabo {
       font-size: 4.2rem;
       font-weight: 800;
@@ -101,11 +148,13 @@
       animation: shimmer 5s infinite ease-in-out;
       background-size: 200% 200%;
     }
+    
     @keyframes shimmer {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+    
     .brand-tabo::after {
       content: '✦';
       font-size: 2rem;
@@ -117,6 +166,7 @@
       display: inline-block;
       animation: spin-star 8s linear infinite;
     }
+    
     .brand-tabo::before {
       content: '✦';
       font-size: 2rem;
@@ -128,65 +178,69 @@
       display: inline-block;
       animation: spin-star 8s linear infinite reverse;
     }
+    
     @keyframes spin-star {
       0% { transform: rotate(0deg) scale(0.9); }
       50% { transform: rotate(180deg) scale(1.2); }
       100% { transform: rotate(360deg) scale(0.9); }
     }
+    
     .sub-head {
       font-size: 1rem;
-      color: #2d3b55;
-      background: rgba(220, 230, 250, 0.5);
+      color: #1f2a3f;
+      background: rgba(220, 230, 250, 0.6);
       backdrop-filter: blur(4px);
       display: inline-block;
-      padding: 6px 20px;
+      padding: 8px 22px;
       border-radius: 60px;
-      font-weight: 600;
+      font-weight: 700;
       letter-spacing: 0.3px;
       border: 1px solid rgba(255, 255, 255, 0.7);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
       transition: all 0.3s ease;
+      cursor: default;
     }
-    .sub-head:hover {
-      background: rgba(220, 230, 250, 0.8);
-      transform: scale(1.02);
-    }
+    
     .sub-head i {
       margin: 0 4px;
       color: #3b7a6b;
     }
-
-    /* وصف + تفاصيل */
+    
+    /* ===== الوصف ===== */
     .service-description {
       text-align: center;
-      margin: 20px 0 24px;
+      margin: 16px 0 20px;
       padding: 0 4px;
     }
+    
     .service-description p {
       font-size: 1rem;
-      color: #1f2a3f;
+      color: #1a2438;
       max-width: 100%;
       margin: 0 auto 12px;
-      line-height: 1.6;
+      line-height: 1.7;
       font-weight: 400;
-      background: rgba(240, 246, 255, 0.4);
-      padding: 12px 16px;
+      background: rgba(240, 246, 255, 0.5);
+      padding: 14px 18px;
       border-radius: 60px;
       backdrop-filter: blur(2px);
       border: 1px solid rgba(255, 255, 255, 0.6);
       transition: all 0.3s ease;
     }
+    
     .service-description p:hover {
-      background: rgba(240, 246, 255, 0.7);
+      background: rgba(240, 246, 255, 0.8);
       transform: scale(1.01);
     }
+    
     .service-description .highlight {
       font-weight: 700;
-      color: #2a5f6b;
+      color: #1a5f4b;
       background: linear-gradient(120deg, rgba(60, 180, 140, 0.15), rgba(60, 180, 140, 0.05));
       padding: 0 6px;
       border-radius: 10px;
     }
+    
     .badge-group {
       display: flex;
       flex-wrap: wrap;
@@ -194,6 +248,7 @@
       gap: 8px 12px;
       margin-top: 12px;
     }
+    
     .badge-group span {
       background: rgba(210, 225, 245, 0.5);
       padding: 6px 16px;
@@ -207,25 +262,96 @@
       transition: all 0.25s ease;
       cursor: default;
     }
+    
     .badge-group span:hover {
       transform: translateY(-3px) scale(1.02);
       background: rgba(210, 225, 245, 0.8);
       box-shadow: 0 8px 20px rgba(40, 60, 120, 0.08);
     }
+    
     .badge-group i {
       margin-left: 6px;
       color: #3b7a6b;
     }
-
-    /* أزرار صدر الصفحة — جميعها باللون الأخضر */
+    
+    /* ===== شهادات العملاء ===== */
+    .testimonials {
+      margin: 16px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .testimonial-item {
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(4px);
+      padding: 10px 16px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+      color: #1f2a3f;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .testimonial-item:hover {
+      background: rgba(255, 255, 255, 0.8);
+      transform: scale(1.01);
+    }
+    
+    .testimonial-item i {
+      color: #f5a623;
+      margin-left: 6px;
+    }
+    
+    .testimonial-item .name {
+      font-weight: 600;
+      color: #2a5f6b;
+    }
+    
+    /* ===== عرض سعر + خصم ===== */
+    .offer-box {
+      background: linear-gradient(135deg, rgba(13, 122, 74, 0.08), rgba(13, 122, 74, 0.02));
+      border: 2px dashed #0d7a4a;
+      border-radius: 30px;
+      padding: 12px 18px;
+      margin: 14px 0 18px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .offer-box:hover {
+      background: rgba(13, 122, 74, 0.12);
+      transform: scale(1.01);
+    }
+    
+    .offer-box .offer-text {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #0d5f3a;
+    }
+    
+    .offer-box .offer-text i {
+      color: #f5a623;
+      margin: 0 4px;
+    }
+    
+    .offer-box .offer-sub {
+      font-size: 0.85rem;
+      color: #3b5f6b;
+      margin-top: 4px;
+    }
+    
+    /* ===== الأزرار الرئيسية ===== */
     .cta-primary {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       gap: 14px;
-      margin: 18px 0 16px;
+      margin: 18px 0 12px;
     }
+    
     .btn-main {
       display: inline-flex;
       align-items: center;
@@ -238,21 +364,20 @@
       text-decoration: none;
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       box-shadow: 0 10px 22px -6px rgba(20, 80, 60, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.4);
       backdrop-filter: blur(2px);
       letter-spacing: 0.3px;
       min-width: 140px;
       flex: 1 1 auto;
-      background: #0d7a4a;
-      color: white;
-      border-color: #2a9e6a;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
     }
+    
     .btn-main i {
-      color: #c6f0da;
       transition: transform 0.3s ease;
     }
+    
     .btn-main::after {
       content: '';
       position: absolute;
@@ -260,29 +385,54 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+      background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 60%);
       opacity: 0;
       transition: opacity 0.4s ease;
       pointer-events: none;
     }
+    
     .btn-main:hover {
       transform: scale(1.04) translateY(-3px);
-      box-shadow: 0 16px 34px -8px rgba(10, 80, 50, 0.4);
-      background: #0a5f3a;
-      border-color: #3bb77a;
     }
+    
     .btn-main:hover::after {
       opacity: 1;
     }
+    
     .btn-main:hover i {
       transform: scale(1.2) rotate(-8deg);
     }
+    
     .btn-main:active {
       transform: scale(0.96);
       transition-duration: 0.1s;
     }
-
-    /* أزرار عائمة — قريبة من بعضها ومناسبة للهواتف */
+    
+    /* زر الاتصال */
+    .btn-call {
+      background: #1a3a6b;
+      color: white;
+      border-color: #4a7ab5;
+    }
+    
+    .btn-call:hover {
+      background: #0f2a4f;
+      box-shadow: 0 16px 34px -8px rgba(20, 50, 100, 0.4);
+    }
+    
+    /* زر واتساب */
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+      border-color: #4ae88a;
+    }
+    
+    .btn-whatsapp:hover {
+      background: #1da851;
+      box-shadow: 0 16px 34px -8px rgba(37, 211, 102, 0.4);
+    }
+    
+    /* ===== الأزرار العائمة ===== */
     .floating-buttons {
       position: fixed;
       bottom: 28px;
@@ -290,11 +440,12 @@
       right: 0;
       display: flex;
       justify-content: center;
-      gap: 32px;
+      gap: 40px;
       padding: 0 20px;
       pointer-events: none;
       z-index: 999;
     }
+    
     .floating-btn {
       pointer-events: auto;
       display: flex;
@@ -303,18 +454,18 @@
       width: 62px;
       height: 62px;
       border-radius: 50%;
-      font-size: 1.9rem;
+      font-size: 2rem;
       color: white;
       text-decoration: none;
       box-shadow: 0 12px 28px rgba(10, 70, 40, 0.3);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      border: 2px solid rgba(255, 255, 255, 0.4);
+      border: 2px solid rgba(255, 255, 255, 0.5);
       backdrop-filter: blur(4px);
-      background: #0d7a4a;
-      border-color: #3bb77a;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
     }
+    
     .floating-btn::after {
       content: '';
       position: absolute;
@@ -323,33 +474,51 @@
       opacity: 0;
       transition: opacity 0.4s ease;
     }
+    
     .floating-btn:hover {
       transform: scale(1.1) translateY(-4px);
-      box-shadow: 0 20px 40px rgba(10, 80, 50, 0.35);
-      background: #0a5f3a;
     }
+    
     .floating-btn:hover::after {
       opacity: 1;
     }
+    
     .floating-btn:active {
       transform: scale(0.92);
     }
+    
     .floating-btn i {
       filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
       transition: transform 0.3s ease;
     }
+    
     .floating-btn:hover i {
       transform: scale(1.15) rotate(-6deg);
     }
-    /* إزالة الـ left/right الثابتة وجعلها في المنتصف */
-    .floating-btn.call-btn,
-    .floating-btn.whatsapp-btn {
-      position: static;
+    
+    .floating-btn.call-float {
+      background: #1a3a6b;
+      border-color: #4a7ab5;
     }
-
-    /* كلمات SEO في الأسفل */
+    
+    .floating-btn.call-float:hover {
+      background: #0f2a4f;
+      box-shadow: 0 20px 40px rgba(20, 50, 100, 0.35);
+    }
+    
+    .floating-btn.whatsapp-float {
+      background: #25D366;
+      border-color: #4ae88a;
+    }
+    
+    .floating-btn.whatsapp-float:hover {
+      background: #1da851;
+      box-shadow: 0 20px 40px rgba(37, 211, 102, 0.35);
+    }
+    
+    /* ===== الفوتر ===== */
     .seo-footer {
-      margin-top: 28px;
+      margin-top: 24px;
       text-align: center;
       font-size: 0.7rem;
       color: #3b4f6b;
@@ -359,9 +528,10 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 6px 12px;
-      opacity: 0.75;
+      opacity: 0.8;
       letter-spacing: 0.2px;
     }
+    
     .seo-footer span {
       background: rgba(200, 215, 240, 0.2);
       padding: 3px 12px;
@@ -371,16 +541,43 @@
       transition: all 0.2s ease;
       cursor: default;
     }
+    
     .seo-footer span:hover {
       background: rgba(200, 215, 240, 0.4);
       transform: translateY(-2px);
     }
+    
     .seo-footer i {
       margin: 0 4px;
       color: #3b7a6b;
       font-size: 0.6rem;
     }
-    /* تحسين إضافي للسيو */
+    
+    .footer-links {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(60, 160, 120, 0.08);
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+    
+    .footer-links a {
+      color: #3b5f7a;
+      text-decoration: none;
+      font-size: 0.7rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 4px 8px;
+      border-radius: 20px;
+    }
+    
+    .footer-links a:hover {
+      color: #0d7a4a;
+      background: rgba(13, 122, 74, 0.08);
+    }
+    
+    /* ===== مخفي للسيو ===== */
     .sr-only {
       position: absolute;
       width: 1px;
@@ -391,69 +588,103 @@
       clip: rect(0,0,0,0);
       border: 0;
     }
-
-    /* تفاعل إضافي: نبض خفيف للأزرار الرئيسية */
-    @keyframes soft-pulse {
-      0% { box-shadow: 0 0 0 0 rgba(13, 122, 74, 0.3); }
-      70% { box-shadow: 0 0 0 12px rgba(13, 122, 74, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(13, 122, 74, 0); }
+    
+    /* ===== تفاعلات إضافية ===== */
+    @keyframes soft-pulse-call {
+      0% { box-shadow: 0 0 0 0 rgba(26, 58, 107, 0.3); }
+      70% { box-shadow: 0 0 0 12px rgba(26, 58, 107, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(26, 58, 107, 0); }
     }
-    .btn-main {
-      animation: soft-pulse 2.5s infinite ease-in-out;
+    
+    @keyframes soft-pulse-whatsapp {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.3); }
+      70% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
-    .btn-main:hover {
+    
+    .btn-call {
+      animation: soft-pulse-call 2.5s infinite ease-in-out;
+    }
+    
+    .btn-whatsapp {
+      animation: soft-pulse-whatsapp 2.5s infinite ease-in-out 0.5s;
+    }
+    
+    .btn-call:hover,
+    .btn-whatsapp:hover {
       animation: none;
     }
-
-    /* تنسيق خاص للشاشات الصغيرة جداً */
+    
+    /* ===== التجاوب مع الشاشات الصغيرة ===== */
     @media (max-width: 425px) {
       .landing-card {
         padding: 20px 14px 28px;
         border-radius: 32px;
       }
+      
       .brand-tabo {
         font-size: 3.2rem;
         letter-spacing: 2px;
       }
-      .brand-tabo::before, .brand-tabo::after {
+      
+      .brand-tabo::before,
+      .brand-tabo::after {
         font-size: 1.5rem;
       }
+      
       .btn-main {
         padding: 12px 20px;
         font-size: 1rem;
         min-width: 120px;
       }
+      
       .floating-btn {
         width: 56px;
         height: 56px;
         font-size: 1.6rem;
       }
+      
       .floating-buttons {
-        gap: 24px;
+        gap: 28px;
         bottom: 20px;
       }
+      
       .sub-head {
         font-size: 0.85rem;
-        padding: 4px 14px;
+        padding: 6px 16px;
       }
+      
       .service-description p {
         font-size: 0.9rem;
-        padding: 10px 14px;
+        padding: 12px 16px;
       }
+      
       .badge-group span {
         font-size: 0.7rem;
         padding: 4px 12px;
       }
+      
+      .testimonial-item {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+      }
+      
+      .offer-box .offer-text {
+        font-size: 0.95rem;
+      }
     }
+    
     @media (max-width: 360px) {
       .floating-btn {
         width: 50px;
         height: 50px;
         font-size: 1.4rem;
       }
+      
       .floating-buttons {
-        gap: 18px;
+        gap: 20px;
       }
+      
       .btn-main {
         padding: 10px 16px;
         font-size: 0.9rem;
@@ -466,15 +697,15 @@
 
 <div class="landing-card" role="main">
 
-  <!-- رأس الصفحة: TABO كبيرة -->
+  <!-- ===== HEADER ===== -->
   <div class="hero-header">
     <h1 class="brand-tabo">TABO</h1>
     <div class="sub-head">
-      <i class="fas fa-spa"></i> مساج منزلي · الكويت <i class="fas fa-hand-sparkles"></i>
+      <i class="fas fa-spa"></i> استمتع بجلسة مساج احترافية في منزلك اليوم <i class="fas fa-hand-sparkles"></i>
     </div>
   </div>
 
-  <!-- وصف الخدمة + كلمات مفتاحية -->
+  <!-- ===== الوصف ===== -->
   <div class="service-description">
     <p>
       <i class="fas fa-home" style="color: #3b7a6b; margin-left: 6px;"></i>
@@ -490,27 +721,51 @@
     </div>
   </div>
 
-  <!-- أزرار اتصال وواتساب في صدر الصفحة (كلاهما أخضر) -->
+  <!-- ===== شهادات العملاء ===== -->
+  <div class="testimonials">
+    <div class="testimonial-item">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      "أفضل مساج منزلي جربته في الكويت، فريق محترف وأنيق." 
+      <span class="name">- سارة</span>
+    </div>
+    <div class="testimonial-item">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      "جداً مريح، أوصي به للجميع. جلسة ممتازة واسترخاء تام." 
+      <span class="name">- أحمد</span>
+    </div>
+  </div>
+
+  <!-- ===== عرض السعر والخصم ===== -->
+  <div class="offer-box">
+    <div class="offer-text">
+      <i class="fas fa-gift"></i> خصم 10% على أول جلسة <i class="fas fa-gift"></i>
+    </div>
+    <div class="offer-sub">
+      جلسة 60 دقيقة · فريقنا يصل إلى منزلك خلال 30 دقيقة
+    </div>
+  </div>
+
+  <!-- ===== الأزرار الرئيسية ===== -->
   <div class="cta-primary">
-    <a href="tel:+96594728014" class="btn-main">
+    <a href="tel:+96594728014" class="btn-main btn-call">
       <i class="fas fa-phone-alt fa-fw"></i> اتصل بنا
     </a>
-    <a href="https://wa.me/96594728014?text=أهلاً%20TABO..%20أرغب%20بحجز%20جلسة%20مساج" target="_blank" class="btn-main">
+    <a href="https://wa.me/96594728014?text=أهلاً%20TABO..%20أرغب%20بحجز%20جلسة%20مساج" target="_blank" class="btn-main btn-whatsapp">
       <i class="fab fa-whatsapp fa-fw"></i> واتساب
     </a>
   </div>
 
-  <!-- أزرار عائمة في منتصف الشاشة وقريبة من بعضها -->
+  <!-- ===== الأزرار العائمة ===== -->
   <div class="floating-buttons" aria-hidden="true">
-    <a href="tel:+96594728014" class="floating-btn call-btn" aria-label="اتصال">
+    <a href="tel:+96594728014" class="floating-btn call-float" aria-label="اتصال">
       <i class="fas fa-phone"></i>
     </a>
-    <a href="https://wa.me/96594728014?text=مرحباً%20TABO%20أريد%20حجز%20مساج" target="_blank" class="floating-btn whatsapp-btn" aria-label="واتساب">
+    <a href="https://wa.me/96594728014?text=مرحباً%20TABO%20أريد%20حجز%20مساج" target="_blank" class="floating-btn whatsapp-float" aria-label="واتساب">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
 
-  <!-- كلمات ومصطلحات لتعزيز السيو -->
+  <!-- ===== الفوتر ===== -->
   <div class="seo-footer">
     <span><i class="fas fa-dot-circle"></i> مساج منزلي الكويت</span>
     <span><i class="fas fa-dot-circle"></i> تدليك منزلي للرجال</span>
@@ -523,15 +778,21 @@
     <span><i class="fas fa-dot-circle"></i> مساج منزلي السالمية</span>
     <span><i class="fas fa-dot-circle"></i> أفضل مساج بالكويت</span>
   </div>
+  
+  <div class="footer-links">
+    <a href="#"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a>
+    <a href="#"><i class="fas fa-file-contract"></i> الشروط والأحكام</a>
+  </div>
 
-  <!-- نص مخفي إضافي لتعزيز السيو -->
+  <!-- ===== نص مخفي للسيو ===== -->
   <div class="sr-only">
     <h2>خدمة مساج منزلي TABO في الكويت</h2>
     <p>نقدم مساج منزلي للنساء والرجال في جميع محافظات الكويت. جلسات مساج سويدي، مساج عميق، مساج استرخائي، ومساج رياضيّ. فريقنا مدرب ومؤهل، نستخدم زيوت طبيعية. احجز جلسة مساج في منزلك الآن.</p>
+    <p>اتصل بنا على 94728014 أو عبر واتساب للحجز والاستفسار. خدمة 24 ساعة طوال أيام الأسبوع.</p>
   </div>
 </div>
 
-<!-- نص بديل للأيقونات (للسيو) -->
+<!-- ===== نص بديل للأيقونات ===== -->
 <span style="display:none;" aria-hidden="true">TABO مساج منزلي الكويت للنساء والرجال – اتصل أو واتساب</span>
 
 </body>
