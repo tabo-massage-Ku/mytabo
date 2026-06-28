@@ -37,7 +37,12 @@
     "image": "https://tabo-kw.com/images/tabo-massage-kw.jpg",
     "openingHours": "Mo-Su 00:00-23:59",
     "sameAs": [
-      "https://wa.me/96594728014"
+      "https://wa.me/96594728014",
+      "https://instagram.com/tabo_kw",
+      "https://twitter.com/tabo_kw",
+      "https://facebook.com/tabo.kw",
+      "https://tiktok.com/@tabo_kw",
+      "https://youtube.com/@tabo_kw"
     ]
   }
   </script>
@@ -526,14 +531,95 @@
       transform: scale(1.15) rotate(-6deg);
     }
     
+    /* ===== أيقونات السوشيال ميديا ===== */
+    .social-section {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 2px solid rgba(224, 64, 251, 0.10);
+      text-align: center;
+    }
+    
+    .social-title {
+      font-size: 0.8rem;
+      color: #6A1B9A;
+      font-weight: 600;
+      margin-bottom: 12px;
+      opacity: 0.7;
+    }
+    
+    .social-title i {
+      color: #E040FB;
+      margin: 0 4px;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(230, 190, 220, 0.25);
+      color: #7B1FA2;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid rgba(255, 200, 215, 0.2);
+      backdrop-filter: blur(2px);
+    }
+    
+    .social-link:hover {
+      transform: translateY(-4px) scale(1.1);
+      background: rgba(224, 64, 251, 0.15);
+      border-color: #E040FB;
+      box-shadow: 0 8px 20px rgba(156, 39, 176, 0.15);
+    }
+    
+    .social-link i {
+      transition: transform 0.3s ease;
+    }
+    
+    .social-link:hover i {
+      transform: scale(1.1) rotate(-4deg);
+    }
+    
+    /* ألوان خاصة لكل منصة عند التمرير */
+    .social-link:hover .fa-instagram {
+      color: #E1306C;
+    }
+    
+    .social-link:hover .fa-x-twitter {
+      color: #000000;
+    }
+    
+    .social-link:hover .fa-facebook-f {
+      color: #1877F2;
+    }
+    
+    .social-link:hover .fa-tiktok {
+      color: #000000;
+    }
+    
+    .social-link:hover .fa-youtube {
+      color: #FF0000;
+    }
+    
     /* ===== الفوتر ===== */
     .seo-footer {
-      margin-top: 20px;
+      margin-top: 16px;
       text-align: center;
       font-size: 0.7rem;
       color: #6A1B9A;
-      border-top: 1px solid rgba(224, 64, 251, 0.12);
-      padding-top: 16px;
+      border-top: 1px solid rgba(224, 64, 251, 0.08);
+      padding-top: 14px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -564,9 +650,9 @@
     }
     
     .footer-links {
-      margin-top: 12px;
+      margin-top: 10px;
       padding-top: 12px;
-      border-top: 1px solid rgba(224, 64, 251, 0.08);
+      border-top: 1px solid rgba(224, 64, 251, 0.06);
       display: flex;
       justify-content: center;
       gap: 20px;
@@ -671,6 +757,16 @@
       .offer-box .offer-text {
         font-size: 1rem;
       }
+      
+      .social-link {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+      }
+      
+      .social-icons {
+        gap: 14px;
+      }
     }
     
     @media (max-width: 360px) {
@@ -688,6 +784,16 @@
         padding: 12px 18px;
         font-size: 0.9rem;
         min-width: 100px;
+      }
+      
+      .social-link {
+        width: 34px;
+        height: 34px;
+        font-size: 0.9rem;
+      }
+      
+      .social-icons {
+        gap: 10px;
       }
     }
   </style>
@@ -761,6 +867,35 @@
         "خدمة سريعة واحترافية، سعر مناسب جداً. شكراً TABO." 
         <span class="name">- نورة</span>
       </div>
+    </div>
+  </div>
+
+  <!-- ===== أيقونات السوشيال ميديا ===== -->
+  <div class="social-section">
+    <div class="social-title">
+      <i class="fas fa-share-alt"></i> تابعنا على منصات التواصل <i class="fas fa-share-alt"></i>
+    </div>
+    <div class="social-icons">
+      <!-- انستجرام -->
+      <a href="https://instagram.com/tabo_kw" target="_blank" class="social-link" aria-label="انستجرام">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- إكس (تويتر سابقاً) -->
+      <a href="https://twitter.com/tabo_kw" target="_blank" class="social-link" aria-label="إكس">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <!-- فيسبوك -->
+      <a href="https://facebook.com/tabo.kw" target="_blank" class="social-link" aria-label="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <!-- تيك توك -->
+      <a href="https://tiktok.com/@tabo_kw" target="_blank" class="social-link" aria-label="تيك توك">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <!-- يوتيوب -->
+      <a href="https://youtube.com/@tabo_kw" target="_blank" class="social-link" aria-label="يوتيوب">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
   </div>
 
